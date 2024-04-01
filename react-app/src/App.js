@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Greeting ,Button,Counter,TaskList,UserCard,Weather} from './components/Day1'
+import { Counter1,CounterWithStep,PersonForm, RandomNumberGenerator, ToDoList1,Clock ,Notifications} from './components/Day2'
 
 function App() {
   return (
@@ -27,6 +28,31 @@ function App() {
     <TaskList array={["Task1","Task2","Task3","Task4","Task5"]}/>
     <br/>
     <Button text={"Clicked Me"} color={"red"}/>
+
+    <h1>Day2 </h1>
+    <Counter1/>
+    <br/>
+    <PersonForm/>
+    <br/>
+    <br/>
+    <ToDoList1/>
+
+    <div>
+      <RandomNumberGenerator/>
+    </div>
+
+    <div>
+      <CounterWithStep/>
+    </div>
+
+    <div>
+      <Clock/>
+    </div>
+
+
+    <div>
+      <Notifications/>
+    </div>
 
       
     </div>
