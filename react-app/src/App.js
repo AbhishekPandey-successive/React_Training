@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { Greeting ,Button,Counter,TaskList,UserCard,Weather} from './components/Day1'
+import { Counter1, CounterWithStep, PersonForm, ToDoList1,Clock,SwitchTheme ,SwitchLangauge,ShoppingCart, Voting,ParentComponent,TaskList1, StudentList, EmployeeSalary,  CountdownComponent, RandomNumberGenerator,Notifications,Storage,ClipBoard,ShoppingCartProvider} from './components/Day2';
+
 
 function App() {
   return (
@@ -28,7 +30,88 @@ function App() {
     <br/>
     <Button text={"Clicked Me"} color={"red"}/>
 
-      
+   
+ 
+     <div>
+      <Counter1/>
+    </div> 
+
+    <div>
+      <PersonForm/>
+    </div> 
+ 
+
+     <div>
+     <ToDoList1/>
+    </div> 
+
+
+    <div>
+      <RandomNumberGenerator/>
+    </div>
+
+
+    <div>
+      <CounterWithStep/>
+    </div>
+
+
+    <div>
+      <Clock/>
+    </div>
+
+    <div>
+      <Notifications/>
+    </div>
+
+    <div>
+      <SwitchTheme/>
+    </div>
+
+  
+    <div>
+      <SwitchLangauge/>
+    </div>
+
+     <div>
+     <ShoppingCartProvider>
+      <ShoppingCart/>
+      </ShoppingCartProvider>
+    </div>  
+ 
+
+   <div>
+    <Voting/>
+   </div>
+
+   <div>
+    <ParentComponent/>
+   </div> 
+
+   <div>
+    <TaskList1/>
+   </div>
+
+   <div>
+    <StudentList/>
+   </div>
+
+   <div>
+    <EmployeeSalary/>
+   </div>
+
+   <div>
+    <Storage/>
+   </div>
+
+   <div>
+    <CountdownComponent/>
+   </div>
+
+   <div>
+    <ClipBoard/>
+   </div>
+       
     </div>
   );
 }
