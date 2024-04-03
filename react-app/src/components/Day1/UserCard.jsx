@@ -1,4 +1,4 @@
-import onepng from './one.png'
+
 function UserCard(props)
 {
     const {name,email}=props
@@ -9,7 +9,8 @@ function UserCard(props)
             <br/>
             "email is :" {email}
             <br/>
-            <img src={onepng} alt="new" style={{height:'100px'}}/>
+            
+            <img src={window.location.origin + '/one.png'} alt="new" style={{height:'100px'}}/>
         </>
     )
 
