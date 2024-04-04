@@ -2,8 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { Greeting ,Button,Counter,TaskList,UserCard,Weather} from './components/Day1'
 import { Counter1,CounterWithStep,PersonForm, RandomNumberGenerator, ToDoList1,Clock ,Notifications} from './components/Day2'
+import { Parent,Child ,Home,About, Navbar, Page404,Protected, Login, DashBoard, Setting,Profile,User} from './components/Day3';
+
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
+
 
 function App() {
+  
   return (
     <div className="App">
     <Greeting/>
@@ -37,22 +43,57 @@ function App() {
     <br/>
     <ToDoList1/>
 
-    <div>
+     <div>
       <RandomNumberGenerator/>
-    </div>
+    </div> 
 
     <div>
       <CounterWithStep/>
-    </div>
+    </div> 
 
     <div>
       <Clock/>
-    </div>
+    </div> 
 
 
-    <div>
+
+     <div>
       <Notifications/>
-    </div>
+    </div> 
+
+     
+     
+    <h1>Day3</h1>
+
+     <div>
+          
+            <Parent>
+              <Child/>
+            </Parent>
+          
+    </div> 
+
+
+
+     <BrowserRouter>
+      <Navbar/>
+      <Routes>
+      <Route path='/home' element={<Protected Component={Home}/>}/>
+      <Route path='/about' element={<Protected Component={About}/>}/>
+      <Route path='/*' element={<Page404/>}/> 
+      <Route path='/login' element={<Login/>}/>
+
+      <Route path='/dashboard' element={<Protected Component={DashBoard}/>}>
+       
+       <Route path='/dashboard/profile' element={<Profile/>}/>
+       <Route path='/dashboard/setting' element={<Setting/>}/>
+
+      </Route>
+
+     <Route path='/user/:id' element={<User/>}/>
+     
+      </Routes>
+    </BrowserRouter> 
 
       
     </div>
