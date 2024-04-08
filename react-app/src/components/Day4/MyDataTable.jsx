@@ -1,4 +1,6 @@
-// MyDataTable.js
+// 12.Build a data table using Material-UI's Table component. Populate the table with sample data and add features like sorting and pagination.
+
+
 import React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -12,13 +14,13 @@ import TablePagination from '@mui/material/TablePagination';
 const sampleData = [
   { id: 1, dessert: 'Frozen yoghurt', calories: 159, fat: 6, carbs: 24, protein: 4 },
   { id: 2, dessert: 'Ice cream sandwich', calories: 237, fat: 9, carbs: 37, protein: 4.3 },
-  // Add more sample data here...
+  
 ];
 
 function MyDataTable() {
   const columns = ['Dessert', 'Calories', 'Fat (g)', 'Carbs (g)', 'Protein (g)'];
 
-  // Pagination state
+  
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 

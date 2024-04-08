@@ -1,3 +1,5 @@
+// 7.Design a search filter component that consists of an input field. As the user types into the input, use controlled components to filter a list of items displayed below. The list should dynamically update to show only items matching the search query.
+
 import React, { useState } from "react";
 
 const SearchFilter = () => {
@@ -30,7 +32,7 @@ const SearchFilter = () => {
         value={searchedItem}
         onChange={handleChange}
       />
-      
+
       <ul>
         {listData.map((item) => (
           <li key={item.id}>{item.name}</li>
