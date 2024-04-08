@@ -21,8 +21,7 @@ const TaskList = () => {
   const handleComplete = useCallback(
     (taskId) => {
       setTasks((prevTasks) =>
-        prevTasks.map((task) =>
-          task.id === taskId ? { ...task, completed: !task.completed } : task
+        prevTasks.map((task) => task.id === taskId ? { ...task, completed: !task.completed } : task
         )
       );
     },
@@ -35,7 +34,8 @@ const TaskList = () => {
       <ul>
         {tasks.map((task) => (
           <li key={task.id}>
-            {task.text}{' '}
+            {task.text}
+            {console.log("1111111111")}
             <button onClick={() => handleComplete(task.id)}>
               {task.completed ? 'Undo' : 'Complete'}
             </button>
