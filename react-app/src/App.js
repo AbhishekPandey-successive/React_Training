@@ -3,7 +3,7 @@ import './App.css';
 import { Greeting ,Button,Counter,TaskList,UserCard,Weather} from './components/Day1'
 import { Counter1,CounterWithStep,PersonForm, RandomNumberGenerator, ToDoList1,Clock ,Notifications,TaskList1} from './components/Day2'
 import { Parent,Child ,Home,About, Navbar, Page404,Protected, Login, DashBoard, Setting,Profile,User} from './components/Day3';
-import { ControlledComponent ,InputFieldComponent, Registration,Form, DropDown,List, SearchFilter, ResponsiveDrawer, ValidationTextFields, MyModalDialog, MyDataTable} from './components/Day4';
+import { ControlledComponent ,InputFieldComponent, Registration,Form, DropDown,List, SearchFilter, ResponsiveDrawer, ValidationTextFields, MyModalDialog, MyDataTable,Login1,ErrorMessage} from './components/Day4';
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
@@ -155,6 +155,16 @@ function App() {
 
     <div>
       <MyDataTable/>
+    </div>
+
+
+    <div>
+      <Login1/>
+    </div>
+
+
+    <div>
+      <ErrorMessage/>
     </div>
 
 
