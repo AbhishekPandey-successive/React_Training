@@ -5,7 +5,7 @@ function withLogger(OriginalComponent) {
 
     function NewComponent()
     {
-        const [count,setCount]=useState(0)
+        const [count,setCount]=useState(1)
         function Increment()
         {
             setCount(count+1)
@@ -22,7 +22,7 @@ function withLogger(OriginalComponent) {
             return ()=>{
                 console.log("Component Unmount")
             }
-        })
+        },[count])
 
         return <OriginalComponent Increment={Increment} count={count}/>
     }
