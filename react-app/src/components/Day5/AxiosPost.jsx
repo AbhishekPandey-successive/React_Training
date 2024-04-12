@@ -2,7 +2,7 @@ import axios from 'axios';
 import React,{useEffect, useState} from 'react'
 
 function AxiosPost() {
-    const [array,setArray]=useState([])
+    const [array,setArray]=useState([]);
 
     const [userId1,setuserId1]=useState("")
     const [title1,settitle1]=useState("")
@@ -11,27 +11,27 @@ function AxiosPost() {
 
     function submituser()
     {
-        // let value={userId,id,title,body};
+        let value={userId1,id1,title1,body1};
 
-        axios.post('ttps://jsonplaceholder.typicode.com/posts',{
-             userId: userId1,
-             id: id1,
-             title:title1 ,
-             body:body1
+        axios.post('https://jsonplaceholder.typicode.com/posts',{
+          method:'POST',
+          headers:{
+            "Accept":'application/json',
+            "Content-type":'application/json'
+          },
+          body:JSON.stringify(value)
+          
+            
             
         }).then((response)=>{
-            setArray(response.data)
+          console.log(response.data)   
+          // setArray(response)
+           
         })
 
-        // console.log(array)
+        
     }
 
-    useEffect(()=>{
-        axios.get('https://jsonplaceholder.typicode.com/posts').then((response)=>{
-            setArray(response.data)
-        })
-        
-    },[])
   return (
 
     <div>
@@ -45,6 +45,7 @@ function AxiosPost() {
         
 
         {
+           
             array.map((item)=>
             <tr>
                 <td>{item.userId}</td>
@@ -68,7 +69,7 @@ function AxiosPost() {
 
       <input type='text' value={body1} onChange={(e)=>setbody1(e.target.value)}/>
 
-      <button onClick={submituser}>Submit user</button>
+      <button type = "submit" onClick={submituser}>Submit user</button>
 
     </div>
   )

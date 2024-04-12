@@ -5,10 +5,11 @@ import { Counter1,CounterWithStep,PersonForm, RandomNumberGenerator, ToDoList1,C
 import { Parent,Child ,Home,About, Navbar, Page404,Protected, Login, DashBoard, Setting,Profile,User} from './components/Day3';
 import { ControlledComponent ,InputFieldComponent, Registration,Form, DropDown,List, SearchFilter, ResponsiveDrawer, ValidationTextFields, MyModalDialog, MyDataTable,Login1,ErrorMessage} from './components/Day4';
 
-import { Application1, Application2, Application3, AxiosErrorHandling, AxiosFetching, AxiosPost, DataFetch, ErrorHandling, LoadingIndicator ,Pagination,Modal,HOCApp, HOCApp2} from './components/Day5';
+import { Application1, Application2, Application3, AxiosErrorHandling, AxiosFetching, AxiosPost, DataFetch, ErrorHandling, LoadingIndicator ,Pagination,Modal,HOCApp, HOCApp2, CharacterList, CharacterListPagination, GraphQLErrorHandling} from './components/Day5';
 // import Modal from "./components/Day5/Modal.jsx"
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
 // import { Pagination } from '@mui/material';
 
 
@@ -175,63 +176,63 @@ function App() {
 
     <h1>Day 5</h1>
 
-    {/* <div>
+    <div>
       <DataFetch/>
-    </div> */}
+    </div>
 
 
-    {/* <div>
+    <div>
       <ErrorHandling/>
-    </div> */}
+    </div>
 
-    {/* <div>
+    <div>
       <LoadingIndicator/>
-    </div> */}
+    </div> 
 
 
-    {/* <div>
+     <div>
       <Pagination/>
-    </div> */}
+    </div> 
 
 
-    {/* <div>
+     <div>
       <AxiosFetching/>
-    </div> */}
+    </div> 
 
-{/* 
+
     <div>
       <AxiosErrorHandling/>
-    </div>  */}
+    </div>  
 
 
-    {/* <div>
+     <div>
       <AxiosPost/>
-    </div> */}
+    </div> 
 
 
 
-    {/* <div>
+     <div>
       <Application1/>
-    </div> */}
+    </div> 
 
 
-    {/* <div>
+    <div>
       <Application2/>
-    </div> */}
+    </div>
 
 
-    {/* <div>
+    <div>
       <Application3/>
-    </div> */}
+    </div>
 
-    {/* <div>
+    <div>
       <Modal/>
-    </div> */}
+    </div>
 
 
-    {/* <div>
+    <div>
       <HOCApp/>
-    </div> */}
+    </div>
 
     <div>
       <HOCApp2/>
@@ -239,14 +240,22 @@ function App() {
 
 
 
+    <div>
+      <CharacterList/>
+    </div>
 
-    
+    <div>
+      <CharacterListPagination/>
+    </div>
+
+
+ 
+     <div>
+      <GraphQLErrorHandling/>
+     </div>
 
 
 
-
-
-   
    
     
       

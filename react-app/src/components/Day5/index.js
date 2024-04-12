@@ -11,5 +11,11 @@ import Application3 from "./Application3";
 import Modal from "./Modal";
 import HOCApp from "./HOCApp";
 import HOCApp2 from "./HOCApp2";
+import CharacterList from "./CharacterList";
+import CharacterListPagination from "./CharacterListPagination";
+import GraphQLErrorHandling from "./GraphQLErroHandling";
 
-export {DataFetch,ErrorHandling,LoadingIndicator,Pagination,AxiosFetching,AxiosErrorHandling,AxiosPost,Application1,Application2,Application3,Modal,HOCApp,HOCApp2}
+
+
+
+export {DataFetch,ErrorHandling,LoadingIndicator,Pagination,AxiosFetching,AxiosErrorHandling,AxiosPost,Application1,Application2,Application3,Modal,HOCApp,HOCApp2,CharacterList,CharacterListPagination,GraphQLErrorHandling}
