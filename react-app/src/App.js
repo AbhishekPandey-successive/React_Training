@@ -16,7 +16,7 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 // import { Pagination } from '@mui/material';
 
-import {Count} from './components/Day6'
+import {Count, MyForm, UserProfile,Modal1} from './components/Day6'
 
 
 
@@ -292,13 +292,16 @@ function App() {
      <div>
       <Count/>
      </div>
-    
 
+     <MyForm/>
 
+     <div>
+     <UserProfile name={"Abhishek"} email={"abhi123@.com"} phone={123456789}/>
+     </div>
 
-   
-    
-      
+     <Modal1/>
+     
+
     </div>
   );
 }
