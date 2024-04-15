@@ -1,3 +1,6 @@
+// You are given a simple form component (LoginForm) that contains input fields for username and password, as well as a submit button. Create test cases to verify that the form fields can be filled, and the submit button works correctly.
+
+
 import React, { useState } from 'react'
 
 function MyForm() {
