@@ -36,7 +36,7 @@ function AxiosErrorHandling() {
         }
     </table>
 
-    {error && <button onClick={()=>setUrl('https://jsonplaceholder.typicode.com/posts')}>INVALID API CALL,Move to correct Url</button>}
+   {error && <button onClick={()=>setUrl('https://jsonplaceholder.typicode.com/posts')}>INVALID API CALL,Move to correct Url</button>}
 
     
     </div>

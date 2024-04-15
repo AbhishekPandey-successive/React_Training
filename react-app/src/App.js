@@ -1,8 +1,12 @@
 import logo from './logo.svg';
+import React,{Suspense,lazy} from 'react'
 import './App.css';
 import { Greeting ,Button,Counter,TaskList,UserCard,Weather} from './components/Day1'
+
 import { Counter1,CounterWithStep,PersonForm, RandomNumberGenerator, ToDoList1,Clock ,Notifications,TaskList1} from './components/Day2'
+
 import { Parent,Child ,Home,About, Navbar, Page404,Protected, Login, DashBoard, Setting,Profile,User} from './components/Day3';
+
 import { ControlledComponent ,InputFieldComponent, Registration,Form, DropDown,List, SearchFilter, ResponsiveDrawer, ValidationTextFields, MyModalDialog, MyDataTable,Login1,ErrorMessage} from './components/Day4';
 
 import { Application1, Application2, Application3, AxiosErrorHandling, AxiosFetching, AxiosPost, DataFetch, ErrorHandling, LoadingIndicator ,Pagination,Modal,HOCApp, HOCApp2, CharacterList, CharacterListPagination, GraphQLErrorHandling} from './components/Day5';
@@ -11,6 +15,16 @@ import { Application1, Application2, Application3, AxiosErrorHandling, AxiosFetc
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 
 // import { Pagination } from '@mui/material';
+
+import {Count} from './components/Day6'
+
+
+
+
+const Home11=lazy(()=>import('./components/Day6/Home11'))
+const About11=lazy(()=>import('./components/Day6/About11'))
+
+
 
 
 
@@ -174,85 +188,111 @@ function App() {
     </div>
  */}
 
-    <h1>Day 5</h1>
+    {/* <h1>Day 5</h1> */}
 
-    <div>
+    {/* <div>
       <DataFetch/>
-    </div>
+    </div> */}
 
 
-    <div>
+
+  
+    {/* <div>
       <ErrorHandling/>
-    </div>
+    </div>  */}
 
-    <div>
+    {/* <div>
       <LoadingIndicator/>
-    </div> 
+    </div>  */}
 
 
-     <div>
+     {/* <div>
       <Pagination/>
-    </div> 
+    </div>  */}
 
 
-     <div>
+     {/* <div>
       <AxiosFetching/>
-    </div> 
+    </div>  */}
 
 
-    <div>
+    {/* <div>
       <AxiosErrorHandling/>
-    </div>  
+    </div>   */}
 
-
+{/* 
      <div>
       <AxiosPost/>
-    </div> 
+    </div>  */}
 
 
 
-     <div>
+     {/* <div>
       <Application1/>
-    </div> 
+    </div>  */}
 
 
-    <div>
+    {/* <div>
       <Application2/>
-    </div>
+    </div> */}
 
 
-    <div>
+    {/* <div>
       <Application3/>
-    </div>
+    </div> */}
 
-    <div>
+    {/* <div>
       <Modal/>
-    </div>
+    </div> */}
 
 
-    <div>
+    {/* <div>
       <HOCApp/>
-    </div>
+    </div> */}
 
-    <div>
+    {/* <div>
       <HOCApp2/>
-    </div>
+    </div> */}
 
 
-
+{/* 
     <div>
       <CharacterList/>
-    </div>
-
+    </div> */}
+{/* 
     <div>
       <CharacterListPagination/>
-    </div>
+    </div> */}
 
 
  
-     <div>
+     {/* <div>
       <GraphQLErrorHandling/>
+     </div> */}
+
+
+
+
+     <h1>Day6</h1>
+
+     
+     
+    
+     <BrowserRouter>
+     <Suspense fallback={<div>Loading the Page</div>}>
+      <Routes>
+          <Route path='/home11' element={Home11}/>
+          <Route path='/about11' element={About11}/>
+      </Routes>
+      </Suspense>
+     </BrowserRouter>
+
+
+
+     <div>
+      <Count/>
      </div>
+    
 
 
 
